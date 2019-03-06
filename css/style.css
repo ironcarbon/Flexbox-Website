@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 *{
+    box-sizing: border-box;
     margin:0;
     padding:0;
-    box-sizing: border-box;
 }
 body{
     font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
 }
 
 a{
@@ -23,6 +25,38 @@ p{
 .text-primary{
     color:var(--text-primary-color);
 }
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    width: 15%;
+    display: inline-block;
+    background: var(--text-primary-color);
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+
+.btn:hover{
+    background: #7ab436;
+}
+
+.btn-dark{
+    background: #333;
+    color: #333;
+}
+
 
 /* Navbar */
 #navbar{
@@ -51,4 +85,30 @@ p{
 #navbar ul li a:hover{
     background: var(--text-primary-color);
     border-radius: 5px;
+}
+
+/* Showcase */
+#showcase{
+    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* OVERLAY */
+    /* position: absolute; */
+    background:rgba(0,0,0,0.4);
+    /* top: 0;
+    left: 0;
+    bottom:0;
+    right: 0; */
+    
 }
