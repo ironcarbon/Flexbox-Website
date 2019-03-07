@@ -41,7 +41,7 @@ $("#navbar a, .btn").on('click', function (event) {
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate(
             {
-                scrollTop: $(hash).offset().top - 65
+                scrollTop: $(hash).offset().top - 100
             },
             800,
 
